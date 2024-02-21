@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital@0;1&display=swap')
+
+
+:root{
+    --cor-principal:#070F2B;
+    --cor-secundaria:#1B1A55;
+    --cor-terciaria:#535C91;
+
+    --fonte-principal:"Kanit", sans-serif;
+}
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,15,43,1) 35%, rgba(0,212,255,1) 100%);
+}
+.principal{
+    font-family: var(--fonte-principal);
+    font-style: italic;
+    font-weight: 400;
+}
+.principal__container{
+
+    width: 95%;
+    height: 100vh;
+    display: flex;
+}
+
+.principal__falas{
+    border: 1px solid black;
+    width: 900px;
+    height: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    color: #1B1A55;
+    background-color: #f4edea;
+    border: 10px solid #9290C3;
+    box-shadow: 10px 5px 5px rgb(27, 26, 26);
+}
+
+.principal__falas p, .principal__falas h3{
+    font-size: 1.5rem;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    margin-top: 15px;
+    background: #535C91;
+    color: #1B1A55;
+    margin-top: 20px;
+}
+
+.rodape h3{
+    font-size: 24px;
+}
+
+.icons ion-icon{
+    width: 40px;
+    height: 40px;
+    margin-right: 40px;
+    color: #1B1A55;
+    justify-content: center;
+    position: relative;
+    z-index: 2; 
+
+}
+
+.icons ion-icon:hover{
+    color: var(--cor-secundaria);
+    transition: 0.5s;
+    position: relative;
+    z-index: 2;
+}
+
+.count-particles{
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .js-count-particles{
+    font-size: 1.1em;
+  }
+  
+  #stats,
+  .count-particles{
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  
+  #stats{
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+  
+  .count-particles{
+    border-radius: 0 0 3px 3px;
+  }
+  
+  #particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+@media(max-width:480px){
+    .principal__falas p, .principal__falas h3{
+        font-size: 1rem;
+    } 
+}
+
